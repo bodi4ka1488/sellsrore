@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatchn } from "react-redux";
 import CustomButton from "../../Main/CustomButton/CustomButton";
 import { setTotalPriceDiscount } from "../../reducers/cartReducer";
 import "./DiscountModal.css";
