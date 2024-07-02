@@ -1,6 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import AboutUs from "./Components/About_us/AboutUs";
 import NotFoundPage from "./Components/Pages/notFoundPage";
 import React, { useEffect, useState } from "react";
 import Modal from "./Components/MyOffice/modal/Modal";
@@ -57,10 +56,6 @@ function App() {
               </Link>
             </>
           )}
-
-          <Link className="Link" to="/AboutUs">
-            AboutUs
-          </Link>
         </header>
 
         <main>
@@ -75,7 +70,6 @@ function App() {
               <Route path="/MyOffice" element={<MyOffice />}></Route>
               {islogin && <Route path="/Cart" element={<Cart />}></Route>}
 
-              <Route path="/AboutUs" element={<AboutUs />}></Route>
               <Route path="/Order" element={<OrderPage />}></Route>
               <Route
                 path="/Order/sending"
