@@ -9,12 +9,11 @@ export const OrderForm = () => {
   const [errorPhone, setErrorPhone] = useState("Це поле не може бути пустим");
   const [errorEmail, setErrorEmail] = useState("Це поле не може бути пустим");
   const navigate = useNavigate();
-  const redirectHandler = () => navigate(`/Order/sending`);
 
   const emailHandler = (e) => {
     setEmail(e.target.value);
     const emailRegex = new RegExp(
-      /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
+      /^[A-Za-z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
       "gm"
     );
     if (!emailRegex.test(e.target.value)) {
@@ -33,7 +32,6 @@ export const OrderForm = () => {
       setErrorPhone("");
     }
   };
-
   const blurHandle = (e) => {
     switch (e.target.name) {
       case "email":
@@ -41,6 +39,8 @@ export const OrderForm = () => {
         break;
       case "phone":
         setPhoneDirty(true);
+        break;
+      default:
         break;
     }
   };
@@ -89,8 +89,8 @@ export const OrderForm = () => {
         placeholder="email"
         required
       />
-    
-      <button  className="orderBtn" type="submit">
+
+      <button className="orderBtn" type="submit">
         Оформить
       </button>
     </form>

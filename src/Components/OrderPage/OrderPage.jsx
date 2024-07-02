@@ -11,7 +11,7 @@ export const OrderPage = () => {
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   return (
     <div className="orderPage-wrapper">
-      {arrOfId.length == 0 ? (
+      {arrOfId.length === 0 ? (
         <div className="wrapperItem">Ваша корзина пуста</div>
       ) : (
         <>
@@ -19,7 +19,8 @@ export const OrderPage = () => {
             <OrderForm />
             <div>
               <div className="titleForm">
-                Ви замовили {arrOfId.length} товарів на суму {totalPrice.toFixed(2)} $
+                Ви замовили {arrOfId.length} товарів на суму{" "}
+                {totalPrice.toFixed(2)} $
               </div>
               {currentCard.map((item) => (
                 <OrderItem item={item} />
