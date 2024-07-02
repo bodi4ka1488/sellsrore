@@ -1,0 +1,65 @@
+.file-uploader__upload-button {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-uploader__custom-button {
+  cursor: pointer;
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.file-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.file-uploader__preview {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed gray;
+  border-radius: 12px;
+}
+
+
+
+
+
+.modalImage{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.514);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modalImage.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.modalImage_content{
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  width: 500px;
+  height: 500px;
+}
+
+.modalImage_content.active{
+  transform: scale(1);
+}

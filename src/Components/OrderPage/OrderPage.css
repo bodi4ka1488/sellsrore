@@ -1,0 +1,13 @@
+.orderPage-wrapper{
+    margin-top: 50px;
+    height: 90vh;
+}
+.containerOrder{
+    display: flex;
+    flex-direction: row;
+}
+.titleForm{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}

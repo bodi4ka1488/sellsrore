@@ -1,0 +1,73 @@
+
+.h2 {
+    margin: 0;
+    padding: 10px 0;
+    height: 20px;
+    width: 100%;
+    font-variant: small-caps;
+}
+.socials{
+    padding: 5px 0;
+    flex-wrap: wrap;
+    width: 7%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.a {
+    font-size: 16px;
+    margin: 10px 0;
+    height: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-variant: small-caps;
+    top: 1px;
+}
+.instagram {
+    color: #FFA9C7;
+    font-size:30px;
+    top: 1px;
+    /*background-image: linear-gradient(to left bottom, rgb(135, 0, 184), rgb(231, 6, 209), yellow);*/
+}
+.telegram {
+    color:#249CD8;
+    font-size: 30px;
+}
+.github{color: #474747;
+    font-size: 30px;
+}
+.instagram:hover, .telegram:hover,
+.github:hover {
+    position: relative;
+    top: 0;
+
+}
+.a:hover {
+    text-decoration: underline;
+    position: relative;
+    top: 0;
+    color: white;
+}
+.h3 {
+    font-weight: bold;
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+    padding: 5px 0;
+   font-size: 18px;
+}
+.h4{
+    padding: 3px 0;
+    margin: 0;
+    width: 100%;
+}
+.div3 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: calc(100% - 16px);
+    padding: 10px 8px;
+}
+

@@ -1,0 +1,9 @@
+.amountOfProducts{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #aae5e5;
+    padding: 3px;    
+    left: 130px;
+    border-radius: 50%;
+}

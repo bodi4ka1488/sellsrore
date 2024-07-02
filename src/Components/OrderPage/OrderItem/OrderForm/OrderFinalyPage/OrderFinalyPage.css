@@ -1,0 +1,10 @@
+.wrapperOrderFinalyPage{
+    text-align: center;
+    font-size: 26px;
+    padding-top: 100px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}

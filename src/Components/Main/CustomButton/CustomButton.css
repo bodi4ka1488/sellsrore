@@ -1,0 +1,22 @@
+.customBtn{
+    width: 100%;
+    background-color: #1e241f;
+
+    height: 40px;
+    color: rgb(124, 221, 221);
+    border-radius: 10px;
+    margin: 5px 0;
+  }
+  .customBtnAdd{
+    background-color: #19b03c;
+}
+  .customBtnRemove{
+    background-color: #f31524;
+
+  }
+.customBtnAdd:hover {background-color: #3e8e41}
+
+.customBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

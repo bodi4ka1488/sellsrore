@@ -1,0 +1,19 @@
+.formInput{
+    border: 1px solid black;
+    width: 300px;
+    padding: 5px;
+}
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: max-content;
+    padding-right: 50px;
+}
+.error{
+    font-size: 30px ;
+    color: red;
+}
+.orderBtn{
+    padding: 5px;
+}

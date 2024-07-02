@@ -1,0 +1,89 @@
+.modal{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.514);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index:999;
+}
+
+.submit{
+  border: 1px solid rgb(24, 25, 32);
+    height: 30px;
+    width: 180px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.modal.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal_content{
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  width: 500px;
+  height: 500px;
+}
+
+.modal_content.active{
+  transform: scale(1);
+}
+
+
+.google-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin-left: 110px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: azure;
+}
+
+.modal-input{
+  font-size: large;
+  height: 40px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.register-password{
+  display: flex;
+  flex-direction: row;
+}
+/* .password-control {
+
+  background: url("https://cdn-icons-png.flaticon.com/512/7615/7615155.png");
+	
+}
+.password-control.view {
+	
+  background-image: url("https://cdn-icons-png.flaticon.com/512/7615/7615155.png") ;
+} */
